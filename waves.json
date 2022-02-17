@@ -1,0 +1,38 @@
+{
+    "enemies": {
+        "enemy": {
+            "lives": 3,
+            "speed": 270
+        },
+        "enemy2": {
+            "lives": 3,
+            "speed": 300
+        }
+    },
+    "waves": [
+        {
+            "spawn_speed": [1, 5, 5, 2],
+            "default_spawn_speed": 3,
+            "name": "First try",
+            "eniemies": ["enemy", "enemy2", "enemy", "enemy", "enemy"]
+        },
+        {
+            "spawn_speed": [1, 3, 1, 3],
+            "default_spawn_speed": 2,
+            "name": "Ok, you are ready",
+            "eniemies": ["enemy2", "enemy", "enemy2", "enemy", "enemy", "enemy2"]
+        },
+        {
+            "spawn_speed": null,
+            "default_spawn_speed": 2,
+            "name": "Ok, you are ready",
+            "eniemies": ["enemy2", "enemy", "enemy", "enemy2", "enemy2", "enemy2"]
+        },
+        {
+            "spawn_speed": [1, 3, 1, 3, 1, 3],
+            "default_spawn_speed": 2,
+            "name": "Ok, you are ready",
+            "eniemies": ["enemy2", "enemy2", "enemy2", "enemy2", "enemy2", "enemy2"]
+        }
+    ]
+}

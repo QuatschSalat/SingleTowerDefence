@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/vader.wav-6ff2b4a0ce60182b17d11b227e9fe2e4.sample"
+
+[deps]
+
+source_file="res://audio/vader.wav"
+dest_files=[ "res://.import/vader.wav-6ff2b4a0ce60182b17d11b227e9fe2e4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

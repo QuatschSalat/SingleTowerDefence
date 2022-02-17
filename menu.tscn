@@ -1,0 +1,182 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://theme.tres" type="Theme" id=1]
+[ext_resource path="res://menu.gd" type="Script" id=2]
+[ext_resource path="res://ui/font/main_small_button_font.tres" type="DynamicFont" id=3]
+[ext_resource path="res://ui/font/Kenney Pixel Square.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://ui/font/Kenney Pixel.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 90
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 33
+font_data = ExtResource( 5 )
+
+[node name="Menu" type="Node2D"]
+light_mask = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 700.0 ],
+"_edit_vertical_guides_": [ 640.0 ]
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+rect_pivot_offset = Vector2( 360, 160 )
+color = Color( 0.278431, 0.278431, 0.278431, 0.72549 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Play" type="Button" parent="."]
+light_mask = 0
+margin_left = 820.0
+margin_top = 330.0
+margin_right = 1100.0
+margin_bottom = 390.0
+focus_mode = 0
+theme = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "PLAY"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tutorial" type="Button" parent="."]
+light_mask = 0
+margin_left = 120.0
+margin_top = 650.0
+margin_right = 320.0
+margin_bottom = 700.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_hover = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_pressed = Color( 0.313726, 0.941176, 0.313726, 1 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+enabled_focus_mode = 0
+text = "Tutorial on"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mouse" type="Button" parent="."]
+light_mask = 0
+margin_left = 400.0
+margin_top = 650.0
+margin_right = 600.0
+margin_bottom = 700.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_hover = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_pressed = Color( 0.313726, 0.941176, 0.313726, 1 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+enabled_focus_mode = 0
+text = "Mouse on"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sound" type="Button" parent="."]
+light_mask = 0
+margin_left = 680.0
+margin_top = 650.0
+margin_right = 880.0
+margin_bottom = 700.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_hover = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_pressed = Color( 0.313726, 0.941176, 0.313726, 1 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+enabled_focus_mode = 0
+text = "Sound on"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Music" type="Button" parent="."]
+light_mask = 0
+margin_left = 960.0
+margin_top = 650.0
+margin_right = 1160.0
+margin_bottom = 700.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_hover = Color( 0.941176, 0.313726, 0.313726, 1 )
+custom_colors/font_color_pressed = Color( 0.313726, 0.941176, 0.313726, 1 )
+custom_fonts/font = ExtResource( 3 )
+toggle_mode = true
+enabled_focus_mode = 0
+text = "Music on"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+light_mask = 0
+margin_left = 740.0
+margin_top = 400.0
+margin_right = 1180.0
+margin_bottom = 440.0
+theme = ExtResource( 1 )
+text = "Klick or press Enter to play"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Highscore" type="Label" parent="."]
+light_mask = 0
+margin_left = 720.0
+margin_top = 510.0
+margin_right = 1200.0
+margin_bottom = 550.0
+theme = ExtResource( 1 )
+text = "Highscore: 123 Points"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WaveBigCount" type="Label" parent="."]
+margin_top = 100.0
+margin_right = 1280.0
+margin_bottom = 260.0
+custom_fonts/font = SubResource( 1 )
+text = "Single Tower Knight"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 80.0
+margin_top = 320.0
+margin_right = 580.0
+margin_bottom = 636.0
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 2 )
+text = "You are one of the last knights in the castle. You did your best to protect the walls from enemies. But now terrible skeletons are coming, some armed, and want to destroy the graves of your ancestors.
+
+Take all your courage and the last strength you have left to protect the tombs from the invaders. Your ancestors will thank you."
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Tutorial" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Mouse" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Sound" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="Music" to="." method="_on_settings_button_pressed"]
